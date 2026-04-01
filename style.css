@@ -8,6 +8,9 @@
     list-style-type: none;
     font-family: "Inter" sans-serif;
 }
+ html {
+  scroll-behavior: smooth;
+}
 
 :root
 {
@@ -94,6 +97,111 @@ p
 .btn_no_bg:hover
 {
    color: var(--main_color);
+}
+.about .container{
+    background: var(--black_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px;
+    padding: 50px;
+}
+.about .div_text{
+    width: 50%;
+    
+}
+.about .div_text h5{
+    color: var(--p_color);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.about .div_text h2{
+    font-size: 45px;
+    margin: 25px 0 5px;
+}
+.about .div_text h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about .div_text p{
+    line-height: 1.8;
+}
+.about .div_text ul{
+    display: flex;
+    color: var(--white_color);
+    margin: 30px 0 20px;
+    flex-wrap: wrap;
+}
+.about .div_text ul li{
+    width: 45%;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.about .div_text ul li i{
+    color: var(--main_color);
+}
+
+.about .div_img{
+    width: 35%;
+}
+
+
+/* End About Section */ 
+ 
+.projects .project_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.projects .project_box img{
+    width: 45%;
+}
+.projects .project_box .text{
+    margin-left: 100px;
+    width: calc(50% - 100px);
+}
+.projects .project_box .text h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.projects .project_box .text h3 a{
+    font-size: 40px;
+    color: var(--white_color);
+    transition: 0.5s;
+}
+.projects .project_box .text h3 a:hover{
+    color: var(--main_color);
+}
+.projects .project_box .text p{
+    margin: 30px 0 50px;
+    line-height: 1.8;
+}
+
+.projects .project_box .text .link{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    color: var(--black_color);
+    font-size: 20px;
+    background: var(--main_color);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    rotate: 45deg;
+    transition: 0.3s ease-in-out;
+}
+.projects .project_box .text .link:hover{
+    scale: 1.2;
+}
+
+.projects .project_box.project_box_2{
+    flex-direction: row-reverse;
 }
 
 
@@ -379,6 +487,7 @@ header nav .icons a:hover
 
 .top_section
 {
+    margin-bottom: 10%;
     margin-top: 40%;
     margin-left: 45%;
 }
